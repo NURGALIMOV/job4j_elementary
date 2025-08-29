@@ -1,0 +1,24 @@
+
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation libs.org.junit.jupiter.junit.jupiter.engine
+    testImplementation libs.org.junit.vintage.junit.vintage.engine
+    testImplementation libs.org.assertj.assertj.core
+}
+
+group = 'ru.job4j'
+version = '1.0'
+description = 'elementary'
+java.sourceCompatibility = JavaVersion.VERSION_17
+
+application {
+    mainClass = "ru.job4j.Main"
+}
